@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: black;
+  background-image: url('https://i.pinimg.com/originals/c5/9a/d2/c59ad2bd4ad2fbacd04017debc679ddb.gif');
+  background-size: cover;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 10% 0;
+  flex-direction: column;
+}
+
+#logo {
+  font-size: 30px;
+}
+
+.nav-links {
+  list-style: none;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 10px 20px;
+  transition: all 0.3s ease 0s;
+}
+
+.no-select {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  font-size: 25px;
+  color: green;
+  /* width: 10%; */
+  background-color: white;
+  padding: 5px;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+
+/* Firefox */
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+form, #result {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 80%;
+  margin: 15px;
+}
+
+#input-text, #submit, #result-text {
+  font-size: 25px;
+}
+
+#submit {
+  border: none;
+}
+
+#binary {
+  text-align: center;
+}
+
+#converted-number {
+  height: 150px;
+  resize: vertical;
+}
+
+#binary, #converted-number {
+  font-size: 25px;
+  color: green;
+  width: 90vw;
+  min-width: 150px;
+  max-width: 400px;
+  min-height: 50px;
+  max-height: 50vh;
+  border-radius: 15px;
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  outline: none;
+}
+
+body, #submit {
+  font-family: Righteous, sans-serif;
+  color: white;
+  background-color: black;
+}
+
+#input-text, #submit {
+  display: block;
+}
+
+#logo:hover, #input-text:hover, #submit:hover, #result-text:hover {
+  color: green;
+}
+
+#result-text:hover {
+  cursor: copy;
+}
+
+.tooltip {
+  position: relative;
+  background: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  color: green;
+  display: none;
+  min-height: 30px;
+}
+
+.tooltip>.tooltip-text {
+  line-height: 30px;
+}
